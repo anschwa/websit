@@ -1,0 +1,125 @@
+*{margin:0;padding:0;}
+
+body{
+    margin:2em;
+    background-color:#f4f4f4;
+    font-family:sans-serif;
+}
+
+#wrapper{
+    display:flex;
+    flex-direction:row;
+}
+
+header{
+    margin-bottom:1em;
+    min-height:4em;
+    border-radius:12px;
+    background-color:#d4d4d4;
+
+    display:flex; /* makes this element a flexbox */
+    justify-content:center; /* vertical alignment (y-axis) */
+    align-items:center; /* horizontal alignment (x-axis ) */
+}
+
+section{
+    margin:0 1em;
+    min-height:40em;
+    border-radius:12px;
+    background-color:#d4d4d4;
+
+    order:2; /* position of this child relative to its siblings */
+    flex-grow:2; /* factor at which the child will stretch */
+    flex-shrink:2; /* factor at which the child will shrink */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+nav{
+    border-radius:12px;
+    background-color:#d4d4d4;
+
+    order:1;
+    flex-grow:1;
+    flex-shrink:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+aside{
+    min-width:10em;
+    border-radius:12px;
+    background-color:#d4d4d4;
+
+    order:3;
+    flex-shrink:0;
+    flex-grow:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer{
+    margin-top:1em;
+    min-height:2em;
+    border-radius:12px;
+    background-color:#d4d4d4;
+
+    display:flex;
+    justify-content:center;
+    Align-items:center;
+}
+
+/* 
+   Media query to change style for smaller browser window.
+   Previous styles are inherited.
+ */
+@media (max-width: 600px) {
+    #wrapper{
+        /* switches content to a vertical layout. */
+        flex-direction:column;
+    }
+    /* adjust sizes for demonstration */
+    section{
+        margin:1em 0;
+        min-height:24em;
+    }
+
+    nav{min-height:3em;}
+
+    aside{min-height:10em;}
+}
+
+#links{
+    padding:1em;
+    margin-top:10em;
+    width:10em;
+    border-radius:12px;
+    background-color:#d4d4d4;
+}
+
+#links p{margin:0.2em 0;}
+
+#links h4{
+    font-weight:bold;
+}
+
+#links p a{
+    text-decoration:none;
+    color:#3d87ff;
+}
+
+#links p a:hover{
+    text-decoration:underline;
+}
+
+#links p a:active{
+    color:#d68c00;
+}
+
+#links p a:visited{
+    color:#d600c6;
+}
