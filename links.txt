@@ -1,0 +1,15 @@
+A Beginner's Guide to HTML / CSS:
+http://learn.shayhowe.com/html-css/terminology-syntax-intro
+
+An Advanced Guide to HTML / CSS:
+http://learn.shayhowe.com/advanced-html-css/performance-organization
+
+The Flexible Box Model:
+How to use flex:
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
+
+Specification Unification:
+https://gist.github.com/cimmanon/727c9d558b374d27c5b6
+
+Adobe Brackets:
+http://brackets.io
